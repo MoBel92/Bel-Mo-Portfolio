@@ -1,12 +1,11 @@
-// src/App.js
 import React from "react";
 import Header from "./Components/Header";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import "./App.css";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import "./Design/App.css";
 
 const App = () => {
   return (

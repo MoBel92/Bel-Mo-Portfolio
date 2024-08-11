@@ -1,6 +1,6 @@
 // src/components/Contact.js
 import React from "react";
-import "./Contact.css";
+import "../Design/Contact.css";
 
 const Contact = () => {
   return (
@@ -13,12 +13,12 @@ const Contact = () => {
       <ul className="contact-list">
         <li>
           Email:{" "}
-          <a href="mailto:your-email@example.com">your-email@example.com</a>
+          <a href="mailto:your-email@gmail.com">belhadj.mohamad@gmail.com</a>
         </li>
         <li>
           LinkedIn:{" "}
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/mohamed-belhadj-mohamed-a1422aa3/"
             target="_blank"
             rel="noopener noreferrer"
           >
