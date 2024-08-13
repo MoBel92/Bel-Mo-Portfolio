@@ -7,12 +7,19 @@ const Skills = () => {
     <section id="skills" className="skills">
       <h2>Skills</h2>
       <ul className="skills-list">
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Python</li>
-        {/* Add more skills as needed */}
+        <li>
+          Languages: JavaScript, using Node.js and browsers as environment
+        </li>
+        <li>Back-End: HTTP servers, SQL, PSQL, seeding, migrationst</li>
+        <li>
+          Front-End: HTML, CSS, React, Lighthouse and other accessibility tools
+        </li>
+        <li>Testing: Test Driven Development (TDD), Jest, SuperTest</li>
+        <li>
+          Soft Skills: Paired programming, technical communication, SDL, agile
+          and SCRUM methodologies
+        </li>
+        <li>Hosting: Render, Netlify</li>
       </ul>
     </section>
   );

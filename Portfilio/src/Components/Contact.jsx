@@ -26,7 +26,7 @@ const Contact = () => {
           </a>
         </li>
         <li>
-          GitHub:{" "}
+          GitHub:
           <a
             href="https://github.com/your-github"
             target="_blank"
