@@ -1,0 +1,37 @@
+.education {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.education-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.institution-link {
+  color: #0070f3; /* Adjust color as needed */
+  text-decoration: none;
+}
+
+.institution-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.institution-name {
+  color: #0070f3; /* Adjust color to match the link color */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.institution-name:hover {
+  text-decoration: underline;
+}
