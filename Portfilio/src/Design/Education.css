@@ -3,36 +3,35 @@
   background-color: #f4f4f4;
 }
 
-.education h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
 .education-card {
-  background-color: #fff;
-  padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .education-card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  margin: 0;
+  font-size: 18px;
 }
 
-.education-card p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.education-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
+.institution-link {
+  color: #0070f3; /* Adjust color as needed */
   text-decoration: none;
 }
 
-.education-card a:hover {
+.institution-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.institution-name {
+  color: #0070f3; /* Adjust color to match the link color */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.institution-name:hover {
   text-decoration: underline;
 }

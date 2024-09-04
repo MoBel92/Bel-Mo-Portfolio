@@ -8,7 +8,15 @@ const Education = () => {
       <div className="education-card">
         <h3>Northcoders Graduate in Full-Stack Development</h3>
         <p>
-          Northcoders - Manchester 06/2024 - 09/2024
+          <a
+            href="https://www.northcoders.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="institution-link"
+          >
+            Northcoders
+          </a>{" "}
+          - Manchester 06/2024 - 09/2024
           <br />
           A highly regarded coding school known for its rigorous and immersive
           training programs. At Northcoders, I am gaining hands-on experience in
@@ -16,7 +24,7 @@ const Education = () => {
           React, Node.js, SQL, PSQL.
           <br />
           <a
-            href="/path-to-diploma-1.pdf"
+            href="/Mohamed-Belhaj-Mohamed-certificate.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,15 +33,23 @@ const Education = () => {
         </p>
       </div>
       <div className="education-card">
-        <h3>National Diploma of applied License in Science & Technology</h3>
+        <h3>National Diploma of Applied License in Science & Technology</h3>
         <p>
-          Higher Institute of Computer Science - Tunis 09/2011 - 06/2014
+          <a
+            href="http://www.isi.rnu.tn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="institution-link"
+          >
+            Higher Institute of Computer Science
+          </a>{" "}
+          - Tunis 09/2011 - 06/2014
           <br />
           I have gained extensive knowledge and hands-on experience in various
           aspects of IT and coding.
           <br />
           <a
-            href="/path-to-diploma-2.pdf"
+            href="/National-Diploma-of-Applied-License.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -44,14 +60,21 @@ const Education = () => {
       <div className="education-card">
         <h3>Bachelor of Science in Computer Science</h3>
         <p>
-          Rades Technical High School - Tunis 09/2010 - 06/2011
+          <a
+            href="https://lyceefarhathached.blogspot.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="institution-link"
+          >
+            High School Farhat Hashed Rades - Tunis 09/2010 - 06/2011{" "}
+          </a>
           <br />
           Developed problem-solving skills and logical thinking through studying
           and implementing various algorithms, Pascal Programming, Database
           manipulation (SQL), and web development (HTML, CSS).
           <br />
           <a
-            href="/path-to-diploma-3.pdf"
+            href="/Baccalaureat-Diploma.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -10,16 +10,19 @@ const Skills = () => {
         <li>
           Languages: JavaScript, using Node.js and browsers as environment
         </li>
-        <li>Back-End: HTTP servers, SQL, PSQL, seeding, migrationst</li>
         <li>
-          Front-End: HTML, CSS, React, Lighthouse and other accessibility tools
+          Back-End: HTTP servers, MondoDB, SQL, PSQL, seeding, migrationst
+        </li>
+        <li>
+          Front-End: HTML, CSS, React, Next.js, Lighthouse and other
+          accessibility tools
         </li>
         <li>Testing: Test Driven Development (TDD), Jest, SuperTest</li>
         <li>
           Soft Skills: Paired programming, technical communication, SDL, agile
           and SCRUM methodologies
         </li>
-        <li>Hosting: Render, Netlify</li>
+        <li>Hosting: Render, Netlify, Vercel</li>
       </ul>
     </section>
   );
