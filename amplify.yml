@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd Portfolio # Navigate to the Portfolio directory
+        - npm install # Install dependencies
+    build:
+      commands:
+        - npm run build # Run the build command
+  artifacts:
+    baseDirectory: Portfolio/dist # Specify the correct build output directory
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - Portfolio/node_modules/**/* # Cache the node_modules in the Portfolio directory
