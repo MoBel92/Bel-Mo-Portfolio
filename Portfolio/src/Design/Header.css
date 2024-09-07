@@ -1,24 +1,36 @@
-/* src/style/Header.css */
-.header {
+header {
+  background: #343a40;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
+  justify-content: center;
 }
 
-.header-title {
-  font-size: 24px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
-.header-nav a {
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
   color: #fff;
-  margin: 0 10px;
   text-decoration: none;
-  transition: color 0.3s;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.header-nav a:hover {
-  color: #007bff;
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #495057;
+  color: #fff;
 }

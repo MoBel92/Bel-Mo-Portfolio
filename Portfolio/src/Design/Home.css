@@ -1,0 +1,70 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.home-header {
+  background: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-details {
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-size: 2rem;
+  margin: 0;
+  color: black;
+}
+
+.profile-title {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.status-section {
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+.status-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.status-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.status-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
