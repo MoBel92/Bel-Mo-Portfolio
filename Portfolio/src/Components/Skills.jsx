@@ -59,11 +59,19 @@ const skillsData = [
   {
     section: "Soft Skills",
     skills: [
-      { icon: faCode, name: "Pair Programming", type: "icon" }, // Example icon
-      { icon: faCode, name: "Technical Communication", type: "icon" }, // Example icon
+      {
+        image: "/PairProgramming.png",
+        name: "Pair Programming",
+        type: "image",
+      },
+      {
+        image: "/TechnicalCom.png",
+        name: "Technical Communication",
+        type: "image",
+      },
 
-      { icon: faCode, name: "Agile", type: "icon" }, // Example icon
-      { icon: faCode, name: "SCRUM", type: "icon" }, // Example icon
+      { image: "/Agile.png", name: "Agile", type: "image" },
+      { image: "/ScrumMaster.png", name: "SCRUM", type: "image" },
     ],
   },
 ];
