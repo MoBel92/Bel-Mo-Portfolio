@@ -1,37 +1,87 @@
 .education {
-  padding: 50px;
-  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.education-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+.education-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .education-card {
-  margin-bottom: 20px;
-  padding: 20px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .education-card h3 {
-  margin: 0;
-  font-size: 18px;
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
 }
 
-.institution-link {
-  color: #0070f3; /* Adjust color as needed */
+.education-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.institution-link,
+.diploma-link {
+  color: #007acc;
   text-decoration: none;
 }
 
-.institution-link:hover {
+.institution-link:hover,
+.diploma-link:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
-.institution-name {
-  color: #0070f3; /* Adjust color to match the link color */
-  text-decoration: none;
-  cursor: pointer;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.institution-name:hover {
-  text-decoration: underline;
+@media (max-width: 768px) {
+  .education-title {
+    font-size: 2rem;
+  }
+
+  .education-card {
+    padding: 15px;
+  }
+
+  .education-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .education-card p {
+    font-size: 0.9rem;
+  }
 }

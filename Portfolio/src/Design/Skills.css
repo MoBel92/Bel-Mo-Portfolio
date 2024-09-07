@@ -12,6 +12,7 @@
   font-size: 3rem;
   margin-bottom: 40px;
   color: #333;
+  animation: fadeIn 1s ease-in;
 }
 
 .skills-section {
@@ -22,7 +23,7 @@
 .skills-icons {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Space between skill items */
+  gap: 40px; /* Space between skill icons */
   flex-wrap: wrap;
 }
 
@@ -32,13 +33,12 @@
   align-items: center;
   text-align: center;
   margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skill-item img,
-.skill-item svg {
-  width: 96px; /* Set the width of images and icons to the same size */
-  height: 96px; /* Set the height to ensure they are square */
-  object-fit: contain; /* Ensure images are contained within their dimensions */
+.skill-item:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
 .skill-item p {
@@ -47,8 +47,21 @@
   color: #444;
 }
 
-.skill-item svg {
-  color: #007acc; /* Icon color - you can adjust this */
+.skill-item svg,
+.skill-item img {
+  width: 100px; /* Set a fixed size for both icons and images */
+  height: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -58,5 +71,11 @@
 
   .skill-item p {
     font-size: 1rem;
+  }
+
+  .skill-item svg,
+  .skill-item img {
+    width: 80px; /* Adjust size for smaller screens */
+    height: 80px;
   }
 }

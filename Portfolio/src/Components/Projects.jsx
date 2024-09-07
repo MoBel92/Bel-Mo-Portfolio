@@ -63,59 +63,83 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="projects">
-      <h2>Projects</h2>
+      <h2 className="projects-title">Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <motion.div
             key={index}
             className="project-card"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }}
             transition={{ duration: 0.3 }}
           >
-            <img src={project.image} alt={`${project.title} screenshot`} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <img
+              src={project.image}
+              alt={`${project.title} screenshot`}
+              className="project-image"
+            />
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
             {project.backEndLink && (
-              <p>
-                <strong>Back-End:</strong> Hosted:
-                <a
-                  href={project.backEndLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.backEndLink}
-                </a>
-                <br />
-                README:
-                <a
-                  href={project.backEndReadme}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Back-End README
-                </a>
-              </p>
+              <div className="project-links">
+                <p>
+                  <strong>Back-End:</strong>
+                </p>
+                <p>
+                  Hosted:{" "}
+                  <a
+                    href={project.backEndLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    {project.backEndLink}
+                  </a>
+                </p>
+                {project.backEndReadme && (
+                  <p>
+                    README:{" "}
+                    <a
+                      href={project.backEndReadme}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Back-End README
+                    </a>
+                  </p>
+                )}
+              </div>
             )}
             {project.frontEndLink && (
-              <p>
-                <strong>Front-End:</strong> Hosted:
-                <a
-                  href={project.frontEndLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.frontEndLink}
-                </a>
-                <br />
-                README:
-                <a
-                  href={project.frontEndReadme}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Front-End README
-                </a>
-              </p>
+              <div className="project-links">
+                <p>
+                  <strong>Front-End:</strong>
+                </p>
+                <p>
+                  Hosted:{" "}
+                  <a
+                    href={project.frontEndLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    {project.frontEndLink}
+                  </a>
+                </p>
+                {project.frontEndReadme && (
+                  <p>
+                    README:{" "}
+                    <a
+                      href={project.frontEndReadme}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Front-End README
+                    </a>
+                  </p>
+                )}
+              </div>
             )}
           </motion.div>
         ))}

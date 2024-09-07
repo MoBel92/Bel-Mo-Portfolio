@@ -30,7 +30,7 @@ const skillsData = [
       { icon: faServer, name: "HTTP Servers", type: "icon" },
       { image: "/PostgreSQL.png", name: "PostgreSQL", type: "image" },
       { icon: faDatabase, name: "SQL", type: "icon" },
-      { icon: faDatabase, name: "PSQL", type: "icon" },
+
       { image: "/ExpressJs.png", name: "Express.js", type: "image" },
       { image: "/MongoDB.png", name: "MongoDB", type: "image" },
     ],
@@ -50,6 +50,20 @@ const skillsData = [
       { image: "/Vercel.png", name: "Vercel", type: "image" },
       { image: "/Netlify.png", name: "Netlify", type: "image" },
       { image: "/Amplify.png", name: "Amplify", type: "image" },
+    ],
+  },
+  {
+    section: "Testing",
+    skills: [{ image: "/Jest.png", name: "Jest", type: "image" }],
+  },
+  {
+    section: "Soft Skills",
+    skills: [
+      { icon: faCode, name: "Pair Programming", type: "icon" }, // Example icon
+      { icon: faCode, name: "Technical Communication", type: "icon" }, // Example icon
+
+      { icon: faCode, name: "Agile", type: "icon" }, // Example icon
+      { icon: faCode, name: "SCRUM", type: "icon" }, // Example icon
     ],
   },
 ];
