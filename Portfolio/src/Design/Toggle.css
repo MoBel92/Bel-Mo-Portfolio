@@ -1,0 +1,32 @@
+/* Default light mode */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-toggle {
+  padding: 8px 16px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #005f99;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* Example for additional dark mode styling */
+body.dark-mode header,
+body.dark-mode .status-section {
+  background-color: #333333;
+  color: #ffffff;
+}

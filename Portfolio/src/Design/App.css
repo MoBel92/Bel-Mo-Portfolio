@@ -1,0 +1,139 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --primary-color: #007acc;
+  --secondary-color: #666;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-bg-color: #e0f7fa;
+}
+
+body.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --primary-color: #69c0ff;
+  --secondary-color: #cccccc;
+  --box-shadow-color: rgba(255, 255, 255, 0.1);
+  --hover-bg-color: #333333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Common Styling for Multiple Components */
+.container {
+  padding: 40px;
+  background-color: var(--bg-color);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px var(--box-shadow-color);
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px;
+  background-color: var(--bg-color);
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.contact-description {
+  color: var(--secondary-color);
+}
+
+.contact-item {
+  background-color: #fff;
+  box-shadow: 0 4px 6px var(--box-shadow-color);
+}
+
+.contact-item:hover {
+  background-color: var(--hover-bg-color);
+}
+
+/* Education Section */
+.education {
+  background-color: var(--bg-color);
+}
+
+.education-title {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.education-card {
+  background-color: #fff;
+}
+
+/* Home Section */
+.home-container {
+  color: var(--text-color);
+}
+
+.profile-title {
+  color: var(--secondary-color);
+}
+
+.status-section {
+  background-color: var(--bg-color);
+}
+
+/* Projects Section */
+.projects {
+  background-color: var(--bg-color);
+}
+
+.projects-title {
+  color: var(--text-color);
+}
+
+/* Skills Section */
+.skills {
+  background-color: var(--bg-color);
+}
+
+.skills-title {
+  color: var(--text-color);
+}
+
+/* Work Experience Section */
+.work-experience {
+  background-color: var(--bg-color);
+}
+
+.work-experience-title {
+  color: var(--text-color);
+}
+
+/* Dark Mode Transition */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
