@@ -22,6 +22,7 @@ const skillsData = [
     skills: [
       { icon: faJs, name: "JavaScript", type: "icon" },
       { icon: faNodeJs, name: "Node.js", type: "icon" },
+      { image: "/ASPNET.png", name: "ASP.NET Core", type: "image" }, // Added ASP.NET Core
     ],
   },
   {
@@ -30,7 +31,6 @@ const skillsData = [
       { icon: faServer, name: "HTTP Servers", type: "icon" },
       { image: "/PostgreSQL.png", name: "PostgreSQL", type: "image" },
       { icon: faDatabase, name: "SQL", type: "icon" },
-
       { image: "/ExpressJs.png", name: "Express.js", type: "image" },
       { image: "/MongoDB.png", name: "MongoDB", type: "image" },
     ],
@@ -69,7 +69,6 @@ const skillsData = [
         name: "Technical Communication",
         type: "image",
       },
-
       { image: "/Agile.png", name: "Agile", type: "image" },
       { image: "/ScrumMaster.png", name: "SCRUM", type: "image" },
     ],
