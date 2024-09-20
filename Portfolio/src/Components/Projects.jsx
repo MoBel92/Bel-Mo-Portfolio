@@ -58,6 +58,27 @@ const projects = [
     backEndLink: null,
     backEndReadme: null,
   },
+  {
+    title: "Hotel Booking App",
+    description:
+      "A scalable Hotel Booking application that allows users to log in, book hotels, check real-time hotel offers, comment on hotel articles, add hotels to a wishlist, and make payments. Built with ASP.NET Core using a microservices architecture for enhanced modularity and maintainability.",
+    image: "/Hotel_Bookings_App.png",
+    frontEndLink: null,
+    frontEndReadme: null,
+    backEndLink: "https://github.com/MoBel92/Hotel_Bookings_App",
+    backEndReadme:
+      "https://github.com/MoBel92/Hotel_Bookings_App/blob/master/README.md",
+    demoLinks: [
+      {
+        label: "Overview Video",
+        url: "https://www.loom.com/share/c2e4a47bcfda40cea9df1db0e2864b84?sid=0b0b5212-a1b4-4a4c-995a-a24b6e453135",
+      },
+      {
+        label: "Final Demo Video",
+        url: "https://www.loom.com/share/b910dd94c35742bfaa14e18f14646f59?sid=8ac7078a-94c8-447d-bb5b-cf33b6669b8a",
+      },
+    ],
+  },
 ];
 
 const Projects = () => {
@@ -139,6 +160,25 @@ const Projects = () => {
                     </a>
                   </p>
                 )}
+              </div>
+            )}
+            {project.demoLinks && project.demoLinks.length > 0 && (
+              <div className="demo-links">
+                <p>
+                  <strong>Demo Videos:</strong>
+                </p>
+                {project.demoLinks.map((demo, demoIndex) => (
+                  <p key={demoIndex}>
+                    <a
+                      href={demo.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      {demo.label}
+                    </a>
+                  </p>
+                ))}
               </div>
             )}
           </motion.div>

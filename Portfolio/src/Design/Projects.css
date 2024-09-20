@@ -27,13 +27,15 @@
 }
 
 .project-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .project-title {
@@ -47,19 +49,24 @@
   padding: 0 20px;
   text-align: center;
   color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .project-links {
   padding: 0 20px;
+  margin-top: 10px;
 }
 
 .project-link {
   color: #007acc;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .project-link:hover {
   text-decoration: underline;
+  color: #005f99;
 }
 
 @keyframes fadeIn {
@@ -84,5 +91,9 @@
 
   .project-description {
     font-size: 0.9rem;
+  }
+
+  .project-links {
+    font-size: 0.85rem;
   }
 }
