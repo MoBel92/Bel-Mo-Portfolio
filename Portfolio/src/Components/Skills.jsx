@@ -22,7 +22,7 @@ const skillsData = [
     skills: [
       { icon: faJs, name: "JavaScript", type: "icon" },
       { icon: faNodeJs, name: "Node.js", type: "icon" },
-      { image: "/ASPNET.png", name: "ASP.NET Core", type: "image" }, // Added ASP.NET Core
+      { image: "/ASPNET.png", name: "ASP.NET Core", type: "image" },
     ],
   },
   {
