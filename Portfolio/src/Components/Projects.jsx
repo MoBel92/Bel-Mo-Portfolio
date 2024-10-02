@@ -70,11 +70,15 @@ const projects = [
       "https://github.com/MoBel92/Hotel_Bookings_App/blob/master/README.md",
     demoLinks: [
       {
-        label: "Overview Video",
+        label: "1/3 Envirements&Architecture",
         url: "https://www.loom.com/share/c2e4a47bcfda40cea9df1db0e2864b84?sid=0b0b5212-a1b4-4a4c-995a-a24b6e453135",
       },
       {
-        label: "Final Demo Video",
+        label: "2/3 Optimisation ",
+        url: "https://www.loom.com/share/b910dd94c35742bfaa14e18f14646f59?sid=8ac7078a-94c8-447d-bb5b-cf33b6669b8a",
+      },
+      {
+        label: "3/3 Final Phase",
         url: "https://www.loom.com/share/b910dd94c35742bfaa14e18f14646f59?sid=8ac7078a-94c8-447d-bb5b-cf33b6669b8a",
       },
     ],
