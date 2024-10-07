@@ -4,10 +4,10 @@ import "../Design/WorkExperience.css";
 
 const experiences = [
   {
-    title: "General Manager",
+    title: "General Manager/Partner",
     company: "Zappza Thai Cafe",
     companyLink: "https://www.zappzaa.com/",
-    dates: "Feb 2023 - Apr 2024",
+    dates: "Feb 2018 - Apr 2024",
     responsibilities: [
       "Directing and managing a 5-star Thai food restaurant.",
       "Overseeing P&L statements and quality controls.",
@@ -15,29 +15,17 @@ const experiences = [
       "Recruiting and training staff.",
     ],
   },
+
   {
-    title: "Deputy General Manager",
-    company: "PizzaExpress",
-    companyLink: "https://www.pizzaexpress.com/",
-    dates: "Mar 2018 - May 2023",
+    title: "Full-Stack Developer",
+    company: "BH Bank",
+    companyLink: "https://bhbank.tn/",
+    dates: "Mar 2016 - Mar 2017",
     responsibilities: [
-      "Ensuring compliance with licensing, hygiene, and health and safety legislation.",
-      "Promoting and marketing the business.",
-      "Producing staff rotas.",
-      "Managing budgets.",
-      "Controlling stock and keeping statistical and financial records.",
-    ],
-  },
-  {
-    title: "Unit Manager",
-    company: "Busaba Bangkok Thai",
-    companyLink: "https://www.busaba.com/",
-    dates: "Mar 2017 - Mar 2018",
-    responsibilities: [
-      "Bookkeeping all daily and weekly financial reports.",
-      "Controlling stock and keeping statistical and financial records.",
-      "Producing staff rotas.",
-      "Recruiting and training new staff.",
+      "Worked on developing and integrating APIs using Express and PostgreSQL, with a focus on backend development.",
+      "Maintained and evolved web platforms, ensuring high performance and scalability.",
+      "Enhancing user interfaces and ensuring responsive designs.",
+      "Key technologies: JavaScript | TypeScript | Node.js | Express | PostgreSQL | SQL | MySQL | jQuery | Bootstrap | ASP.NET Core | HTML | CSS.",
     ],
   },
 ];
