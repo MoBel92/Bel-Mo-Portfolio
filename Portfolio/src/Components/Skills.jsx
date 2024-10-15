@@ -7,12 +7,7 @@ import {
   faReact,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faServer,
-  faCloud,
-  faDatabase,
-  faCode,
-} from "@fortawesome/free-solid-svg-icons";
+import { faServer, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import "../Design/Skills.css";
 
 // Skills Data Array
@@ -94,7 +89,8 @@ const Skills = () => {
                     className="skill-image"
                   />
                 ) : null}
-                <p>{skill.name}</p>
+                <p>{skill.name}</p>{" "}
+                {/* Red shiny light effect on skill names */}
               </div>
             ))}
           </div>

@@ -27,10 +27,50 @@ nav ul li a {
   padding: 5px 10px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493;
+  animation: linkGlow 3s infinite, linkFlicker 2s infinite;
 }
 
+/* Animation on hover */
 nav ul li a:hover,
 nav ul li a.active {
   background-color: #495057;
   color: #fff;
+}
+
+/* Keyframes for link glow */
+@keyframes linkGlow {
+  0% {
+    text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493;
+  }
+  20% {
+    text-shadow: 0 0 10px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  }
+  40% {
+    text-shadow: 0 0 10px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+  }
+  60% {
+    text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493;
+  }
+  80% {
+    text-shadow: 0 0 10px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493;
+  }
+}
+
+/* Flickering effect for the links */
+@keyframes linkFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }

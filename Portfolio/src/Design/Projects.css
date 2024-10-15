@@ -7,8 +7,53 @@
   text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
-  color: #333;
-  animation: fadeIn 1s ease-in;
+  color: #ff4500; /* Fire orange-red color */
+  text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
+    0 0 40px #ffa500, 0 0 50px #ff4500, 0 0 60px #ff6347, 0 0 70px #ff8c00;
+  animation: fadeInDown 1s ease-in, fireGlow 2.5s infinite alternate,
+    fireFlicker 1.5s infinite;
+  background-color: transparent;
+}
+
+/* Fire glow animation */
+@keyframes fireGlow {
+  0% {
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347, 0 0 20px #ff8c00,
+      0 0 30px #ffa500, 0 0 40px #ff4500;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
+      0 0 40px #ffa500, 0 0 50px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff4500, 0 0 25px #ff6347, 0 0 35px #ff8c00,
+      0 0 45px #ffa500, 0 0 55px #ff4500;
+  }
+}
+
+/* Flickering effect */
+@keyframes fireFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Move down and fade in animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Start slightly above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End in place */
+  }
 }
 
 .projects-grid {
@@ -22,9 +67,9 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: auto; /* Allows scrolling inside the card if content is too long */
+  overflow: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-height: 500px; /* Adjust this value as needed */
+  max-height: 500px;
   padding: 10px;
 }
 
@@ -69,17 +114,6 @@
 .project-link:hover {
   text-decoration: underline;
   color: #005f99;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 768px) {

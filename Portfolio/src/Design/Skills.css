@@ -8,11 +8,120 @@
   background-color: #f0f0f0;
 }
 
+/* Fire effect for the Skills title */
 .skills-title {
   font-size: 3rem;
   margin-bottom: 40px;
-  color: #333;
-  animation: fadeIn 1s ease-in;
+  color: #ff4500;
+  text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
+    0 0 40px #ffa500, 0 0 50px #ff4500, 0 0 60px #ff6347, 0 0 70px #ff8c00;
+  animation: fadeIn 1.5s ease-in forwards, fireGlow 2.5s infinite alternate,
+    fireFlicker 1.5s infinite;
+}
+
+/* Blue fire effect for the Languages title */
+.skills-section h3 {
+  font-size: 2.5rem;
+  color: #00f;
+  text-shadow: 0 0 10px #00f, 0 0 20px #1e90ff, 0 0 30px #4169e1,
+    0 0 40px #87cefa, 0 0 50px #00f, 0 0 60px #1e90ff, 0 0 70px #4169e1;
+  animation: blueFireGlow 2.5s infinite alternate, blueFireFlicker 1.5s infinite;
+}
+
+/* Fire glow animation for title */
+@keyframes fireGlow {
+  0% {
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347, 0 0 20px #ff8c00,
+      0 0 30px #ffa500, 0 0 40px #ff4500;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
+      0 0 40px #ffa500, 0 0 50px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff4500, 0 0 25px #ff6347, 0 0 35px #ff8c00,
+      0 0 45px #ffa500, 0 0 55px #ff4500;
+  }
+}
+
+/* Blue fire glow animation for the Languages title */
+@keyframes blueFireGlow {
+  0% {
+    text-shadow: 0 0 5px #00f, 0 0 10px #1e90ff, 0 0 20px #4169e1,
+      0 0 30px #87cefa, 0 0 40px #00f;
+  }
+  50% {
+    text-shadow: 0 0 10px #00f, 0 0 20px #1e90ff, 0 0 30px #4169e1,
+      0 0 40px #87cefa, 0 0 50px #00f;
+  }
+  100% {
+    text-shadow: 0 0 15px #00f, 0 0 25px #1e90ff, 0 0 35px #4169e1,
+      0 0 45px #87cefa, 0 0 55px #00f;
+  }
+}
+
+/* Flickering effect for blue fire */
+@keyframes blueFireFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Flickering effect for fire */
+@keyframes fireFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Strong red shiny effect for each skill name */
+.skill-item p {
+  font-size: 1.2rem;
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff4500, 0 0 30px #ff6347,
+    0 0 40px #ff0000, 0 0 50px #ff4500;
+  animation: redShinyGlow 3s infinite alternate, redShinyFlicker 1.5s infinite;
+}
+
+/* Red shiny glow animation */
+@keyframes redShinyGlow {
+  0% {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff4500, 0 0 20px #ff6347,
+      0 0 30px #ff0000, 0 0 40px #ff4500;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff4500, 0 0 30px #ff6347,
+      0 0 40px #ff0000, 0 0 50px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff0000, 0 0 25px #ff4500, 0 0 35px #ff6347,
+      0 0 45px #ff0000, 0 0 55px #ff4500;
+  }
+}
+
+/* Red shiny flickering effect */
+@keyframes redShinyFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .skills-section {
@@ -23,7 +132,7 @@
 .skills-icons {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Space between skill icons */
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -37,31 +146,14 @@
 }
 
 .skill-item:hover {
-  transform: scale(1.1); /* Zoom effect on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
-}
-
-.skill-item p {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  color: #444;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skill-item svg,
 .skill-item img {
-  width: 100px; /* Set a fixed size for both icons and images */
+  width: 100px;
   height: 100px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 768px) {
@@ -75,7 +167,7 @@
 
   .skill-item svg,
   .skill-item img {
-    width: 80px; /* Adjust size for smaller screens */
+    width: 80px;
     height: 80px;
   }
 }

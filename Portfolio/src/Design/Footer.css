@@ -3,9 +3,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 5px; /* Reduce the padding to make it smaller */
   background-color: #333;
   color: #fff;
   text-align: center;
   z-index: 10; /* Ensure it stays above other content */
+  font-size: 0.9rem; /* Optionally reduce the font size to match */
 }

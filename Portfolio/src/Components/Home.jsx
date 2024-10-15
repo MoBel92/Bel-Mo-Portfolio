@@ -7,11 +7,13 @@ const Home = () => {
     <div className="home-container">
       <header className="home-header">
         <div className="profile-section">
-          <img
-            src={myPicture}
-            alt="Mohamed Belhaj Mohamed"
-            className="profile-image"
-          />
+          <div className="profile-image-container">
+            <img
+              src={myPicture}
+              alt="Mohamed Belhaj Mohamed"
+              className="profile-image"
+            />
+          </div>
           <div className="profile-details">
             <h1 className="profile-name">Mohamed Belhaj Mohamed</h1>
             <p className="profile-title">Full-Stack Developer</p>
