@@ -1,22 +1,67 @@
 .contact {
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: var(--bg-color); /* Use CSS variable for background */
+  transition: background-color 0.3s ease, color 0.3s ease;
   text-align: center;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--box-shadow-color);
 }
 
 .contact-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
-  animation: fadeIn 1s ease-in;
+  color: #ff4500; /* Fire orange-red color */
+  text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
+    0 0 40px #ffa500, 0 0 50px #ff4500, 0 0 60px #ff6347, 0 0 70px #ff8c00;
+  animation: fadeInDown 1s ease-in, fireGlow 2.5s infinite alternate,
+    fireFlicker 1.5s infinite;
+}
+
+/* Fire glow animation */
+@keyframes fireGlow {
+  0% {
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347, 0 0 20px #ff8c00,
+      0 0 30px #ffa500, 0 0 40px #ff4500;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
+      0 0 40px #ffa500, 0 0 50px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff4500, 0 0 25px #ff6347, 0 0 35px #ff8c00,
+      0 0 45px #ffa500, 0 0 55px #ff4500;
+  }
+}
+
+/* Flickering effect */
+@keyframes fireFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Move down and fade in animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Start slightly above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End in place */
+  }
 }
 
 .contact-description {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #666;
+  color: var(--secondary-color); /* Adapt secondary color for description */
 }
 
 .contact-list {
@@ -32,19 +77,20 @@
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  color: #007acc;
+  color: var(--primary-color); /* Adapt text color for links */
   transition: all 0.3s ease;
   border-radius: 5px;
   padding: 10px;
   width: 80%;
   max-width: 600px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-bg-color); /* Adapt background to dark mode */
+  box-shadow: 0 4px 6px var(--box-shadow-color);
+  overflow: hidden;
 }
 
 .contact-item:hover {
   transform: scale(1.05);
-  background-color: #e0f7fa;
+  background-color: var(--hover-bg-color); /* Adapt hover background */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -57,17 +103,6 @@
 .contact-icon {
   margin-right: 10px;
   font-size: 1.5rem;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 768px) {

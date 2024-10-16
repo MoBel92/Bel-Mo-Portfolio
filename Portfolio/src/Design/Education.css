@@ -1,18 +1,25 @@
+/* Education Section */
 .education {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: var(--bg-color); /* Adapt to dark mode */
 }
 
+/* Education Title with Firelight Animation */
 .education-title {
   font-size: 3rem;
   margin-bottom: 30px;
-  color: #333;
-  animation: fadeIn 1s ease-in;
+  color: #ff4500; /* Fire orange-red color */
+  text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
+    0 0 40px #ffa500, 0 0 50px #ff4500, 0 0 60px #ff6347, 0 0 70px #ff8c00;
+  animation: fadeInDown 1s ease-in, fireGlow 2.5s infinite alternate,
+    fireFlicker 1.5s infinite;
+  background-color: transparent;
 }
 
+/* Education Cards */
 .education-cards {
   display: flex;
   flex-direction: column;
@@ -21,34 +28,39 @@
   max-width: 1200px;
 }
 
+/* Individual Education Card */
 .education-card {
-  background-color: #fff;
+  background-color: var(--card-bg-color); /* Adapt for dark mode */
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--box-shadow-color);
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .education-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Card Title */
 .education-card h3 {
   margin-top: 0;
   font-size: 1.5rem;
-  color: #333;
+  color: var(--text-color); /* Adapt to dark mode */
 }
 
+/* Card Description */
 .education-card p {
   margin: 10px 0;
   font-size: 1rem;
-  color: #666;
+  color: var(--secondary-color); /* Adapt to dark mode */
 }
 
+/* Links inside Cards */
 .institution-link,
 .diploma-link {
-  color: #007acc;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -57,15 +69,50 @@
   text-decoration: underline;
 }
 
-@keyframes fadeIn {
-  from {
+/* Fade-in and Move Down Animation */
+@keyframes fadeInDown {
+  0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-20px); /* Start slightly above */
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* End in place */
   }
+}
+
+/* Firelight Glow Animation */
+@keyframes fireGlow {
+  0% {
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347, 0 0 20px #ff8c00,
+      0 0 30px #ffa500, 0 0 40px #ff4500;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
+      0 0 40px #ffa500, 0 0 50px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff4500, 0 0 25px #ff6347, 0 0 35px #ff8c00,
+      0 0 45px #ffa500, 0 0 55px #ff4500;
+  }
+}
+
+/* Flickering effect for firelight */
+@keyframes fireFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Smooth transitions for dark mode */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media (max-width: 768px) {

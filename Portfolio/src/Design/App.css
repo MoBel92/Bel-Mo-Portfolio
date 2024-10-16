@@ -5,8 +5,8 @@
   --secondary-color: #666;
   --box-shadow-color: rgba(0, 0, 0, 0.1);
   --hover-bg-color: #e0f7fa;
+  --card-bg-color: #fff; /* Default light mode card background */
 }
-
 body.dark-mode {
   --bg-color: #1a1a1a;
   --text-color: #f0f0f0;
@@ -14,11 +14,13 @@ body.dark-mode {
   --secondary-color: #cccccc;
   --box-shadow-color: rgba(255, 255, 255, 0.1);
   --hover-bg-color: #333333;
+  --card-bg-color: #333; /* Dark mode card background */
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Common Styling for Multiple Components */
@@ -55,43 +57,7 @@ a:hover {
   box-shadow: 0 8px 12px var(--box-shadow-color);
 }
 
-/* Contact Section */
-.contact {
-  padding: 40px;
-  background-color: var(--bg-color);
-}
-
-.contact-title {
-  font-size: 2.5rem;
-  color: var(--text-color);
-}
-
-.contact-description {
-  color: var(--secondary-color);
-}
-
-.contact-item {
-  background-color: #fff;
-  box-shadow: 0 4px 6px var(--box-shadow-color);
-}
-
-.contact-item:hover {
-  background-color: var(--hover-bg-color);
-}
-
 /* Education Section */
-.education {
-  background-color: var(--bg-color);
-}
-
-.education-title {
-  font-size: 3rem;
-  color: var(--text-color);
-}
-
-.education-card {
-  background-color: #fff;
-}
 
 /* Home Section */
 .home-container {
@@ -102,38 +68,6 @@ a:hover {
   color: var(--secondary-color);
 }
 
-.status-section {
-  background-color: var(--bg-color);
-}
-
-/* Projects Section */
-.projects {
-  background-color: var(--bg-color);
-}
-
-.projects-title {
-  color: var(--text-color);
-}
-
-/* Skills Section */
-.skills {
-  background-color: var(--bg-color);
-}
-
-.skills-title {
-  color: var(--text-color);
-}
-
-/* Work Experience Section */
-.work-experience {
-  background-color: var(--bg-color);
-}
-
-.work-experience-title {
-  color: var(--text-color);
-}
-
-/* Dark Mode Transition */
 body {
   transition: background-color 0.3s, color 0.3s;
 }

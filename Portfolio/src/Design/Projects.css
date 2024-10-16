@@ -1,18 +1,18 @@
 .projects {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--bg-color); /* Use CSS variable for background */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .projects-title {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
-  color: #ff4500; /* Fire orange-red color */
+  color: var(--text-color); /* Ensure text adapts to dark mode */
   text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 30px #ff8c00,
     0 0 40px #ffa500, 0 0 50px #ff4500, 0 0 60px #ff6347, 0 0 70px #ff8c00;
   animation: fadeInDown 1s ease-in, fireGlow 2.5s infinite alternate,
     fireFlicker 1.5s infinite;
-  background-color: transparent;
 }
 
 /* Fire glow animation */
@@ -58,29 +58,35 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Ensures responsive card size */
   gap: 20px;
   justify-content: center;
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: var(--card-bg-color); /* Dark mode adaptation */
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px var(--box-shadow-color);
+  padding: 20px;
+  max-width: 100%; /* Ensures cards don't exceed their container */
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
   max-height: 500px;
-  padding: 10px;
+  overflow: hidden;
 }
 
 .project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Enables scrolling for overflowing content */
 }
 
 .project-image {
   width: 100%;
-  height: auto;
+  height: 200px;
   display: block;
   object-fit: cover;
 }
@@ -89,15 +95,17 @@
   font-size: 1.5rem;
   margin: 10px 0;
   text-align: center;
-  color: #333;
+  color: var(--text-color); /* Adapt to dark mode */
 }
 
 .project-description {
   padding: 0 20px;
   text-align: center;
-  color: #666;
+  color: var(--text-color); /* Adapt to dark mode */
   font-size: 1rem;
   line-height: 1.5;
+  max-height: 120px; /* Prevent description overflow */
+  overflow-y: auto; /* Enable scrolling if content is too long */
 }
 
 .project-links {
@@ -106,19 +114,22 @@
 }
 
 .project-link {
-  color: #007acc;
+  color: var(--primary-color); /* Adapt to dark mode */
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .project-link:hover {
   text-decoration: underline;
-  color: #005f99;
 }
 
 @media (max-width: 768px) {
   .projects-title {
     font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 15px; /* Adjust padding for smaller screens */
   }
 
   .project-title {

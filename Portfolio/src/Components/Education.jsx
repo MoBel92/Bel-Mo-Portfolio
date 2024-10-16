@@ -20,9 +20,9 @@ const Education = () => {
             - Manchester 06/2024 - 09/2024
             <br />
             A highly regarded coding school known for its rigorous and immersive
-            training programs. At Northcoders, I am gaining hands-on experience
-            in full-stack development, mastering technologies such as
-            JavaScript, React, Node.js, SQL, PSQL.
+            training programs. At Northcoders, I gained hands-on experience in
+            full-stack development, mastering technologies such as JavaScript,
+            React, Node.js, SQL, and PSQL.
             <br />
             <a
               href="/Mohamed-Belhaj-Mohamed-certificate.pdf"
@@ -47,7 +47,7 @@ const Education = () => {
             </a>{" "}
             - Tunis 09/2011 - 06/2014
             <br />
-            I have gained extensive knowledge and hands-on experience in various
+            I gained extensive knowledge and hands-on experience in various
             aspects of IT and coding.
             <br />
             <a
