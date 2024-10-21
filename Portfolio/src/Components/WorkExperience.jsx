@@ -22,10 +22,10 @@ const experiences = [
     companyLink: "https://bhbank.tn/",
     dates: "Mar 2016 - Mar 2017",
     responsibilities: [
-      "Worked on developing and integrating APIs using Express and PostgreSQL, with a focus on backend development.",
+      "Worked on developing and integrating APIs using ASP.NET Core Web API and SQL, with a focus on backend development.",
       "Maintained and evolved web platforms, ensuring high performance and scalability.",
       "Enhancing user interfaces and ensuring responsive designs.",
-      "Key technologies: JavaScript | TypeScript | Node.js | Express | PostgreSQL | SQL | MySQL | jQuery | Bootstrap | ASP.NET Core | HTML | CSS.",
+      "Key technologies: Node.js | C# | ASP.NET Core |JavaScript | React | SQL | MySQL | jQuery | Bootstrap | HTML | CSS.",
     ],
   },
 ];
