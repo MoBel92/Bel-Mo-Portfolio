@@ -7,6 +7,34 @@ const Education = () => {
       <h2 className="education-title">Education</h2>
       <div className="education-cards">
         <div className="education-card">
+          <h3>ICT & Telecoms Engineer Certificate</h3>
+          <p>
+            <a
+              href="https://aim2learn.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="institution-link"
+            >
+              Aim2Learn
+            </a>{" "}
+            - [Year of Completion]
+            <br />
+            Completed certification in ICT and Telecommunications Engineering,
+            focusing on networking, telecom systems, and IT infrastructure.
+            Gained hands-on experience in structured cabling, patch panels, RJ45
+            terminations, and telecom socket installations (NTe5a & NTe5c).
+            <br />
+            <a
+              href="/ICT-Telecoms-Certificate.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="diploma-link"
+            >
+              View Certificate
+            </a>
+          </p>
+        </div>
+        <div className="education-card">
           <h3>Northcoders Graduate in Full-Stack Development</h3>
           <p>
             <a

@@ -7,7 +7,7 @@ const experiences = [
     title: "General Manager/Partner",
     company: "Zappza Thai Cafe",
     companyLink: "https://www.zappzaa.com/",
-    dates: "Feb 2018 - Apr 2024",
+    dates: "Feb 2019 - Apr 2024",
     responsibilities: [
       "Directing and managing a 5-star Thai food restaurant.",
       "Overseeing P&L statements and quality controls.",
@@ -20,7 +20,7 @@ const experiences = [
     title: "Full-Stack Developer",
     company: "BH Bank",
     companyLink: "https://bhbank.tn/",
-    dates: "Mar 2016 - Mar 2017",
+    dates: "Mar 2016 - Mar 2018",
     responsibilities: [
       "Worked on developing and integrating APIs using ASP.NET Core Web API and SQL, with a focus on backend development.",
       "Maintained and evolved web platforms, ensuring high performance and scalability.",
