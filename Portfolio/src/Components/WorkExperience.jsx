@@ -4,6 +4,20 @@ import "../Design/WorkExperience.css";
 
 const experiences = [
   {
+    title: "Telecoms Fibre Installation Engineer",
+    company: "MJ Quinn",
+    companyLink: "https://www.mjquinn.co.uk/",
+    dates: "Feb 2025 - Present",
+    responsibilities: [
+      "Install, splice, and test fibre optic cables for residential and commercial customers.",
+      "Perform fault finding and troubleshooting to identify and resolve fibre connectivity issues.",
+      "Install and configure customer equipment to ensure reliable broadband connectivity.",
+      "Use OTDR testing equipment, fibre splicing tools, and technical diagrams to complete installations accurately.",
+      "Ensure all installation work complies with industry standards, technical specifications, and health and safety regulations.",
+    ],
+  },
+
+  {
     title: "General Manager/Partner",
     company: "Zappza Thai Cafe",
     companyLink: "https://www.zappzaa.com/",
@@ -24,8 +38,8 @@ const experiences = [
     responsibilities: [
       "Worked on developing and integrating APIs using ASP.NET Core Web API and SQL, with a focus on backend development.",
       "Maintained and evolved web platforms, ensuring high performance and scalability.",
-      "Enhancing user interfaces and ensuring responsive designs.",
-      "Key technologies: Node.js | C# | ASP.NET Core |JavaScript | React | SQL | MySQL | jQuery | Bootstrap | HTML | CSS.",
+      "Enhanced user interfaces and ensured responsive designs.",
+      "Key technologies: Node.js | C# | ASP.NET Core | JavaScript | React | SQL | MySQL | jQuery | Bootstrap | HTML | CSS.",
     ],
   },
 ];
@@ -39,7 +53,10 @@ const WorkExperience = () => {
           <motion.div
             key={index}
             className="experience-card"
-            whileHover={{ scale: 1.05, boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+            }}
             transition={{ duration: 0.3 }}
           >
             <h3 className="experience-title">
@@ -53,9 +70,11 @@ const WorkExperience = () => {
                 {experience.company}
               </a>
             </h3>
+
             <p className="experience-dates">
               <strong>Dates:</strong> {experience.dates}
             </p>
+
             <ul className="experience-responsibilities">
               {experience.responsibilities.map((item, i) => (
                 <li key={i}>{item}</li>
