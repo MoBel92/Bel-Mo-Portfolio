@@ -6,6 +6,28 @@ const Education = () => {
     <section id="education" className="education">
       <h2 className="education-title">Education</h2>
       <div className="education-cards">
+        {/* Current University Studies */}
+        <div className="education-card">
+          <h3>Computing</h3>
+          <p>
+            <a
+              href="https://arden.ac.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="institution-link"
+            >
+              Arden University – Holborn Campus
+            </a>{" "}
+            - Currently in my Second Year
+            <br />
+            Currently studying Computing at Arden University, developing my
+            knowledge of computer science, software development, programming,
+            and IT. Building on my previous technical training and full-stack
+            development experience to strengthen my skills and advance my career
+            in technology.
+          </p>
+        </div>
+
         <div className="education-card">
           <h3>ICT & Telecoms Engineer Certificate</h3>
           <p>
@@ -34,6 +56,7 @@ const Education = () => {
             </a>
           </p>
         </div>
+
         <div className="education-card">
           <h3>Northcoders Graduate in Full-Stack Development</h3>
           <p>
@@ -62,6 +85,7 @@ const Education = () => {
             </a>
           </p>
         </div>
+
         <div className="education-card">
           <h3>National Diploma of Applied License in Science & Technology</h3>
           <p>
@@ -88,6 +112,7 @@ const Education = () => {
             </a>
           </p>
         </div>
+
         <div className="education-card">
           <h3>Bachelor of Science in Computer Science</h3>
           <p>
