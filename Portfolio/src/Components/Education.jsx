@@ -39,7 +39,7 @@ const Education = () => {
             >
               Aim2Learn
             </a>{" "}
-            - [Year of Completion]
+            - [London 02/2024 - 08/2024]
             <br />
             Completed certification in ICT and Telecommunications Engineering,
             focusing on networking, telecom systems, and IT infrastructure.
